@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer with Video</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-section">
+            <h1>Countdown Timer</h1>
+            
+            <div class="timer-input">
+                <input type="number" id="minutes" min="0" max="60" placeholder="Minutes">
+                <input type="number" id="seconds" min="0" max="59" placeholder="Seconds">
+                <button id="startButton" class="control-button">
+                    <i class="fas fa-play"></i> Start
+                </button>
+                <button id="resetButton" class="control-button">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+
+            <div class="countdown-display">
+                <span id="timeLeft">00:00</span>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div id="videoPlayer" class="hidden"></div>
+        </div>
+
+        <footer class="footer">
+            With love from <span class="author">Surya Prakash Thota</span> <i class="fas fa-heart"></i>
+        </footer>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
